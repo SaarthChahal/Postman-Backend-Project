@@ -27,9 +27,9 @@ var headphones = []headphone{
 
 func main() {
 	router := gin.Default()
-	router.GET("/albums", getHeadphones)
-	router.GET("/albums/:id", getHeadphoneByID)
-	router.POST("/albums", postHeadphones)
+	router.GET("/headphones", getHeadphones)
+	router.GET("/headphones/:id", getHeadphoneByID)
+	router.POST("/headphones", postHeadphones)
 
 	router.Run("localhost:8080")
 }
